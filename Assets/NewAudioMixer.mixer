@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!245 &-1775483273109129946
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot - Copy
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 65dc78216294f6449a589596523c65b2
+  m_FloatValues:
+    c142ce1a303dc204ca6d750d93d704ca: 0.04171297
+    742bcbfc622c6864c8ca370f4c792f14: 0.44032478
+  m_TransitionOverrides: {}
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -11,6 +24,7 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
+  - {fileID: -1775483273109129946}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -69,9 +83,28 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 35b16d45202e7c349a2c5ad1ea9b08d0
   m_FloatValues:
-    c142ce1a303dc204ca6d750d93d704ca: 0.04171297
-    742bcbfc622c6864c8ca370f4c792f14: 0.44032478
+    dccde3d3cf0bd464aba93c62dee31d9e: -6.5566154
+    c142ce1a303dc204ca6d750d93d704ca: -10.345207
+    742bcbfc622c6864c8ca370f4c792f14: -24.162655
   m_TransitionOverrides: {}
+--- !u!244 &360539667325403644
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 1870df2ddead19e4398f89b5ce4ecfad
+  m_EffectName: Lowpass
+  m_MixLevel: 499a042cb1fed5241b2fe4af06297e3d
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: 355fe2b61706fc340b699020a72aa6c0
+  - m_ParameterName: Resonance
+    m_GUID: c72571186d72a074982797196ce61f7a
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &1772183268966411335
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -134,6 +167,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 1772183268966411335}
+  - {fileID: 360539667325403644}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0

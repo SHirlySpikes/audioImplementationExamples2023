@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.atmoky.truespatial": "file:C:/Users/shirl/Downloads/atmokyTrueSpatial_v1.0.0/atmokyTrueSpatial_v1.0.0/package",
     "com.unity.collab-proxy": "1.17.7",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.16",
